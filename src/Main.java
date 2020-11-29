@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-      int replenishment_amount = 1500 ;
-              int current_account = 200;
-              int bonus_ruble = (int) (replenishment_amount * 0.01);
-      int total_account;
-      if(replenishment_amount > 1000)
-      { total_account = current_account + replenishment_amount + bonus_ruble;
+      int replenishmentAmount = 1500 ;
+              int currentAccount = 200;
+              int bonusRuble = replenishmentAmount / 100;
+      int totalAccount;
+      if(replenishmentAmount > 1000)
+      { totalAccount = currentAccount + replenishmentAmount + bonusRuble;
       } else {
-          total_account = replenishment_amount + current_account;
+          totalAccount = replenishmentAmount + currentAccount;
       }
-      System.out.println(total_account);
+      System.out.println(totalAccount);
     }
 }
